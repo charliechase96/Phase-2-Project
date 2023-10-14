@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,65 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body {
+  background-image: url(https://i.pinimg.com/originals/30/17/cf/3017cfe806cbc892e475fc338b9e4dcd.gif);
+  background-size: cover;
+}
+
+
+.NavBar {
+  background-color: rgb(255, 255, 255, 0.35);
+  padding: 1.5%;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+a.active-link {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: large;
+}
+
+a.active-link.active {
+  font-weight: bold;
+  color: rgb(87, 68, 175);
+}
+
+a {
+  color: black;
+}
+
+.kitten-card {
+  background-color: rgb(255, 255, 255, 0.5);
+  width: 200px;
+  height: 200px;
+  padding: 7px 7px 7px 7px;
+  margin: 15px 15px 15px 15px;
+  float: left;
+  border-radius: 7px;
+  
+}
+
+img {
+  width: 175px;
+  height: 175px;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+
+}
+
+button {
+  width: 120px;
+  border-radius: 7px;
+  margin-left: 20%;
+  position: absolute;
 }

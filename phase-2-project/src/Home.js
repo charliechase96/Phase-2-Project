@@ -1,22 +1,16 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
+import KittenCard from "./KittenCard";
 
-function Home() {
-    const [kittens, setKittens] = useState([]);
+function Home({kittens, setKittens}) {
 
     useEffect(() => {
-        fetch("https://localhost:3000/kittens")
+        fetch("http://localhost:3000/kittens")
         .then(response => response.json())
         .then(data => setKittens(data))
       }, [])
 
     return (
-        <div className="kitten-gallery">
-            {kittens.map((kitten) => (
-                <div key={kitten.id} className="kitten-card">
-                    <img src={kitten.image} alt={`Kitten ${kitten.id}`} />
-                </div>
-            ))}
-        </div>
+        <KittenCard kittens={kittens} />
     )
 }
 

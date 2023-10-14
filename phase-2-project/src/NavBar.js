@@ -4,9 +4,9 @@ import {NavLink} from "react-router-dom";
 function NavBar() {
     return (
         <nav>
-            <ul style={{ display: 'flex', gap: '10px', listStyleType: 'none' }}>
+            <ul className="NavBar" style={{ display: 'flex', gap: '10px', listStyleType: 'none' }}>
                     <li>
-                        <NavLink exact to="/"
+                        <NavLink exact="true" to="/"
                             className="active-link">
                             Home
                         </NavLink>
