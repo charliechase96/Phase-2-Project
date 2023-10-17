@@ -9,6 +9,10 @@ function FavoriteKittens({favorites}) {
         setSelectedColor(color);
     }
 
+    const displayedKittens = selectedColor === "All"
+        ? favorites
+        : favorites.filter(kitten => kitten.color === selectedColor);
+
     return (
         <div className="top-of-container">
             <h1 className="fave-header">Favorite Kittens</h1>
@@ -16,7 +20,7 @@ function FavoriteKittens({favorites}) {
                 currentColor={selectedColor} 
                 onColorChange={handleColorChange}/>
             <div className="fave-kitten-container">
-                {favorites.map(kitten => (
+                {displayedKittens.map(kitten => (
                     <div className="fave-kitten-wrapper">
                         <KittenCard key={kitten.id} kitten={kitten} />
                         <button className="remove">✖</button>

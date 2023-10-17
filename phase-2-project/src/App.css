@@ -78,6 +78,8 @@ img {
   background-color: rgb(50, 50, 50);
   color: rgb(159, 137, 255);
   border-radius: 7px;
+  width: 100px;
+  margin-left: 55px;
 }
 
 .fave-header {
