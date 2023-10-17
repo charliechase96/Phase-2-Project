@@ -11,6 +11,14 @@ function AddNewKitten() {
             color: color,
             image: imageUrl
         };
+
+        fetch("http://localhost:3000/kittens", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newKitten),
+        });
     }
     
     return (
