@@ -1,8 +1,8 @@
-import React, {useEffect} from "react";
-import KittenCard from "./KittenCard";
+import React, {useEffect, useState} from "react";
+import KittenForm from "./KittenForm";
 
-function Home({kittens, setKittens}) {
-
+function Home() {
+    const [kittens, setKittens] = useState([]);
     const kittenData = "http://localhost:3000/kittens";
 
     useEffect(() => {
@@ -12,7 +12,7 @@ function Home({kittens, setKittens}) {
       }, [setKittens])
 
     return (
-        <KittenCard kittens={kittens} />
+        <KittenForm kittens={kittens} />
     )
 }
 

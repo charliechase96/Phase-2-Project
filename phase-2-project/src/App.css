@@ -1,52 +1,13 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
 body {
-  background-image: url(https://i.pinimg.com/originals/30/17/cf/3017cfe806cbc892e475fc338b9e4dcd.gif);
-  background-size: cover;
+  background-image: url(https://i.gifer.com/5EDx.gif);
+  background-size: auto;
 }
 
 
 .NavBar {
-  background-color: rgb(255, 255, 255, 0.35);
+  background-color: rgba(130, 100, 190, 0.5);
   padding: 1.5%;
   border-radius: 2%;
   display: flex;
@@ -63,20 +24,20 @@ a.active-link {
 
 a.active-link.active {
   font-weight: bold;
-  color: rgb(87, 68, 175);
+  color: rgb(159, 137, 255);
 }
 
 a {
-  color: Black;
+  color: rgb(202, 202, 202);
 }
 
 .kitten-card {
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgba(176, 138, 251, 0.35);
   width: 200px;
   height: 200px;
   padding: 7px 7px 7px 7px;
-  margin: 15px 15px 15px 15px;
-  float: left;
+  margin: 10px 10px 10px 10px;
+  object-fit: contain;
   border-radius: 7px;
   
 }
@@ -91,9 +52,24 @@ img {
 
 }
 
-button {
+.submit {
   width: 120px;
   border-radius: 7px;
-  margin-left: 20%;
-  position: absolute;
+  margin: 5px 30px 5px 0px;
+  font-family: "Pixelify Sans", sans-serif;
+  color: rgba(202, 202, 202);
+  background-color: black;
+}
+
+.kitten-form {
+  background-color: rgb(130, 100, 190, 0.5);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.form-label {
+  font-family: "Pixelify Sans", sans-serif;
+  color: rgb(202, 202, 202);
 }
