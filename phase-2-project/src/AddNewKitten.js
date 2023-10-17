@@ -4,8 +4,13 @@ function AddNewKitten() {
     const [color, setColor] = useState("");
     const [imageUrl, setImageUrl] = useState("");
 
-    function handleSubmit() {
-        console.log("Hi")
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        const newKitten = {
+            color: color,
+            image: imageUrl
+        };
     }
     
     return (
