@@ -7,9 +7,8 @@ function NavBar() {
             <ul className="NavBar" style={{ display: 'flex', gap: '10px', listStyleType: 'none' }}>
                     <li>
                         <NavLink 
-                            exact={true} 
                             to="/"
-                            className="active-link"
+                            end className="link"
                         >
                             Home
                         </NavLink>
@@ -17,7 +16,8 @@ function NavBar() {
                     <li>
                         <NavLink 
                             to="/add-new-kitten" 
-                            className="active-link"
+                            className="link"
+
                         >
                             Add New Kitten
                         </NavLink>
@@ -25,7 +25,7 @@ function NavBar() {
                     <li>
                         <NavLink 
                             to="/favorites" 
-                            className="active-link"
+                            className="link"
                         >
                             Favorite Kittens
                         </NavLink>

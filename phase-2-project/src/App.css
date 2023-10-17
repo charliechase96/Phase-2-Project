@@ -15,14 +15,14 @@ body {
   width: 100%;
 }
 
-a.active-link {
+a.link {
   margin-left: 100px;
   margin-right: 100px;
   font-family: "Pixelify Sans", sans-serif;
   font-size: large;
 }
 
-a.active-link.active {
+a.link.active {
   font-weight: bold;
   color: rgb(159, 137, 255);
 }
@@ -72,4 +72,19 @@ img {
 .form-label {
   font-family: "Pixelify Sans", sans-serif;
   color: rgb(202, 202, 202);
+}
+
+.remove {
+  background-color: rgb(50, 50, 50);
+  color: rgb(159, 137, 255);
+  border-radius: 7px;
+}
+
+.fave-header {
+  color: rgb(202, 202, 202);
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.fave-kitten-container {
+  background-color: rgba(176, 138, 251, 0.35);
 }

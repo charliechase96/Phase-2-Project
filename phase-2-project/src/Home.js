@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import KittenForm from "./KittenForm";
 
-function Home() {
+function Home({setFavorites}) {
     const [kittens, setKittens] = useState([]);
     const kittenData = "http://localhost:3000/kittens";
 
@@ -12,7 +12,7 @@ function Home() {
       }, [setKittens])
 
     return (
-        <KittenForm kittens={kittens} />
+        <KittenForm kittens={kittens} setFavorites={setFavorites} />
     )
 }
 
