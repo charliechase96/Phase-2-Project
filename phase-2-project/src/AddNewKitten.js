@@ -1,6 +1,9 @@
 import React, {useId} from "react";
 
 function AddNewKitten() {
+    const [color, setColor] = useState("");
+    const [imageUrl, setImageUrl] = useState("");
+
     function handleSubmit() {
         console.log("Hi")
     }
