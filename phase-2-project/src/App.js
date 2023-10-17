@@ -17,8 +17,9 @@ function App() {
           <Routes>
             <Route 
               path="/favorites" 
-              element={<FavoriteKittens 
-              favorites={favoriteKittens} />} 
+              element={
+                <FavoriteKittens 
+                  favorites={favoriteKittens} />} 
             />
             <Route 
               path="/add-new-kitten" 

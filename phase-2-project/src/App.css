@@ -88,3 +88,25 @@ img {
 .fave-kitten-container {
   background-color: rgba(176, 138, 251, 0.35);
 }
+
+button.selected {
+  background-color: rgb(159, 137, 255);
+  border: 2px solid rgb(50, 50, 50);
+  font-family: "Pixelify Sans" sans-serif;
+  color: black;
+  border-radius: 5px;
+  font-size: larger;
+}
+
+button.not-selected {
+  background-color: rgb(50, 50, 50);
+  color: rgb(202, 202, 202);
+  border: 2px solid rgb(159, 137, 255);
+  border-radius: 5px;
+  font-size: larger;
+  font-family: "Pixelify Sans" sans-serif;
+}
+
+body {
+  font-family: "Pixelify Sans" sans-serif
+}
