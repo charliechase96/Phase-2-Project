@@ -22,7 +22,7 @@ function AddNewKitten() {
                 </label>
                 <input 
                     type="submit" 
-                    className="submit" 
+                    className="add-new-kitten" 
                     value="Add New Kitten"
                 />
             </form>
