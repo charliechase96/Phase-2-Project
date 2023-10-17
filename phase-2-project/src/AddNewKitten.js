@@ -20,7 +20,11 @@ function AddNewKitten() {
                     Image Url
                     <input type="text" placeholder="Kitten Image URL..."/>
                 </label>
-                <input type="submit" className="submit" value="submit"/>
+                <input 
+                    type="submit" 
+                    className="submit" 
+                    value="Add New Kitten"
+                />
             </form>
         </div>
         
