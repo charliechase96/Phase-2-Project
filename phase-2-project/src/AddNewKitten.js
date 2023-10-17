@@ -39,7 +39,13 @@ function AddNewKitten() {
             
                 <label className="label-text">
                     Image Url
-                    <input type="text" placeholder="Kitten Image URL..."/>
+                    <input 
+                        type="text" 
+                        placeholder="Kitten Image URL..."
+                        value={imageUrl}
+                        onChange={(event) => {
+                            setImageUrl(event.target.value)}}
+                    />
                 </label>
                 <input 
                     type="submit" 
