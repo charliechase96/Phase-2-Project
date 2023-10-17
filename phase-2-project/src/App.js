@@ -8,14 +8,9 @@ import AddNewKitten from './AddNewKitten';
 
 function App() {
   const [favoriteKittens, setFavoriteKittens] = useState([]);
-  const [kittens, setKittens] = useState([]);
 
   const handleRemove = (idToRemove) => {
     setFavoriteKittens(prevFavorites => prevFavorites.filter(kitten => kitten.id !== idToRemove));
-  }
-
-  const handleAddKitten = (newKitten) => {
-    setKittens(prevKittens => [...prevKittens, newKitten]);
   }
 
   return (
@@ -33,7 +28,7 @@ function App() {
             />
             <Route 
               path="/add-new-kitten" 
-              element={<AddNewKitten onAdd={handleAddKitten}/>} 
+              element={<AddNewKitten />} 
             />
             <Route 
               path="/" 
