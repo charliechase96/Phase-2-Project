@@ -59,6 +59,7 @@ img {
   font-family: "Pixelify Sans", sans-serif;
   color: rgba(202, 202, 202);
   background-color: black;
+  cursor: pointer;
 }
 
 .kitten-form {
@@ -80,6 +81,7 @@ img {
   border-radius: 7px;
   width: 100px;
   margin-left: 55px;
+  cursor: pointer;
 }
 
 .fave-header {
@@ -98,6 +100,7 @@ button.selected {
   color: black;
   border-radius: 5px;
   font-size: larger;
+  cursor: pointer;
 }
 
 button.not-selected {
@@ -107,8 +110,10 @@ button.not-selected {
   border-radius: 5px;
   font-size: larger;
   font-family: "Pixelify Sans" sans-serif;
+  cursor: pointer;
 }
 
 body {
   font-family: "Pixelify Sans" sans-serif
 }
+
