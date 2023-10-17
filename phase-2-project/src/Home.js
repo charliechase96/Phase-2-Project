@@ -3,10 +3,9 @@ import KittenForm from "./KittenForm";
 
 function Home({setFavorites}) {
     const [kittens, setKittens] = useState([]);
-    const kittenData = "http://localhost:3000/kittens";
 
     useEffect(() => {
-        fetch(kittenData)
+        fetch("http://localhost:3000/kittens")
         .then(response => response.json())
         .then(data => setKittens(data))
       }, [setKittens])

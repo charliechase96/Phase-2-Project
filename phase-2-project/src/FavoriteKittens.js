@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import KittenCard from "./KittenCard";
 import ColorFilter from "./ColorFilter";
 
-function FavoriteKittens({favorites}) {
+function FavoriteKittens({favorites, onRemove}) {
     const [selectedColor, setSelectedColor] = useState("All");
 
     const handleColorChange = (color) => {
@@ -23,7 +23,12 @@ function FavoriteKittens({favorites}) {
                 {displayedKittens.map(kitten => (
                     <div className="fave-kitten-wrapper">
                         <KittenCard key={kitten.id} kitten={kitten} />
-                        <button className="remove">✖</button>
+                        <button 
+                            className="remove" 
+                            onClick={() => onRemove(kitten.id)}
+                        >
+                            ✖
+                        </button>
                     </div>
                 ))}
             </div>
