@@ -3,11 +3,13 @@ import KittenCard from "./KittenCard";
 
 function Home({kittens, setKittens}) {
 
+    const kittenData = "http://localhost:3000/kittens";
+
     useEffect(() => {
-        fetch("http://localhost:3000/kittens")
+        fetch(kittenData)
         .then(response => response.json())
         .then(data => setKittens(data))
-      }, [])
+      }, [setKittens])
 
     return (
         <KittenCard kittens={kittens} />

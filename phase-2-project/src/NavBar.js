@@ -6,14 +6,14 @@ function NavBar() {
         <nav>
             <ul className="NavBar" style={{ display: 'flex', gap: '10px', listStyleType: 'none' }}>
                     <li>
-                        <NavLink exact="true" to="/"
-                            className="active-link">
-                            Home
+                        <NavLink to="/about" className="active-link">
+                            About
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" className="active-link">
-                            About
+                        <NavLink exact="true" to="/"
+                            className="active-link">
+                            Home
                         </NavLink>
                     </li>
                     <li>
