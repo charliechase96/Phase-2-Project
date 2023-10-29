@@ -37,7 +37,7 @@ function AddNewKitten() {
                         <option>White</option>
                         <option>Black</option>
                         <option>Tuxedo</option>
-                        <option></option>
+                        <option>Gray</option>
             
                 <label className="label-text">
                     Image Url
