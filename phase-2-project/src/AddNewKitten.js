@@ -35,7 +35,7 @@ function AddNewKitten() {
                     />
                         <option>Orange</option>
                         <option>White</option>
-                        <option></option>
+                        <option>Black</option>
                         <option></option>
                         <option></option>
             
