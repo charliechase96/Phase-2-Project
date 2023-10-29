@@ -34,7 +34,7 @@ function AddNewKitten() {
                         onChange={(event) => setColor(event.target.value)}
                     />
                         <option>Orange</option>
-                        <option></option>
+                        <option>White</option>
                         <option></option>
                         <option></option>
                         <option></option>
