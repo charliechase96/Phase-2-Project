@@ -27,20 +27,17 @@ function AddNewKitten() {
                 Add New Kitten to Collection
             </h2>
             <form onSubmit={handleSubmit}>
-                <label className="label-text">
                     Color
                     <select 
-                        placeholder="Kitten Fur Color..."
+                        name="kitten-fur-color"
                         value={color}
                         onChange={(event) => setColor(event.target.value)}
-                    >
+                    />
+                        <option>Orange</option>
                         <option></option>
                         <option></option>
                         <option></option>
                         <option></option>
-                        <option></option>
-                    <select/>
-                </label>
             
                 <label className="label-text">
                     Image Url
