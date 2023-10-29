@@ -33,11 +33,11 @@ function AddNewKitten() {
                         value={color}
                         onChange={(event) => setColor(event.target.value)}
                     />
-                        <option>Orange</option>
-                        <option>White</option>
-                        <option>Black</option>
-                        <option>Tuxedo</option>
-                        <option>Gray</option>
+                        <option value="Orange">Orange</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                        <option value="Tuxedo">Tuxedo</option>
+                        <option value="Gray">Gray</option>
             
                 <label className="label-text">
                     Image Url
