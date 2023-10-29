@@ -29,12 +29,17 @@ function AddNewKitten() {
             <form onSubmit={handleSubmit}>
                 <label className="label-text">
                     Color
-                    <input 
-                        type="text" 
+                    <select 
                         placeholder="Kitten Fur Color..."
                         value={color}
                         onChange={(event) => setColor(event.target.value)}
-                    />
+                    >
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    <select/>
                 </label>
             
                 <label className="label-text">
