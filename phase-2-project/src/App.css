@@ -137,6 +137,7 @@ body {
 .label-text {
   font-family: "Pixelify Sans" sans-serif;
   color: rgb(202, 202, 202);
+  font-size: larger;
 }
 
 .add-new-kitten {
