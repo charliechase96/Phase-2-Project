@@ -73,6 +73,8 @@ img {
 .form-label {
   font-family: "Pixelify Sans", sans-serif;
   color: rgb(202, 202, 202);
+  font-size: larger;
+  text-decoration: underline;
 }
 
 .remove {
