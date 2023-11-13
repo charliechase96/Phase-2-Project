@@ -149,3 +149,7 @@ body {
   background-color: black;
   cursor: pointer;
 }
+
+.select-fur-color {
+  padding: 20px;
+}

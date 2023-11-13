@@ -27,7 +27,8 @@ function AddNewKitten() {
                 Add New Kitten to Collection
             </h2>
             <form onSubmit={handleSubmit}>
-                <label className="label-text">Fur Color</label>
+                <div className="select-fur-color">
+                  <label className="label-text">Fur Color</label>
                     <select
                         value={color}
                         onChange={(event) => setColor(event.target.value)}
@@ -37,8 +38,10 @@ function AddNewKitten() {
                         <option value="Black">Black</option>
                         <option value="Tuxedo">Tuxedo</option>
                         <option value="Gray">Gray</option>
-                    </select>
-                <label className="label-text">Image Url</label>
+                    </select>  
+                </div>
+                <div className="image-url">
+                  <label className="label-text">Image Url</label>
                     <input 
                         type="text" 
                         placeholder="Kitten Image URL..."
@@ -47,11 +50,12 @@ function AddNewKitten() {
                             setImageUrl(event.target.value)}}
                     />
                 
-                <input 
-                    type="submit" 
-                    className="add-new-kitten" 
-                    value="Add New Kitten"
-                />
+                    <input 
+                        type="submit" 
+                        className="add-new-kitten" 
+                        value="Add New Kitten"
+                    />  
+                </div>
             </form>
         </div>
         
