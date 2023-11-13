@@ -132,6 +132,7 @@ body {
 .form-title {
   font-family: "Pixelify Sans" sans-serif;
   color: rgb(202, 202, 202);
+  text-decoration: underline;
 }
 
 .label-text {
@@ -143,13 +144,15 @@ body {
 .add-new-kitten {
   width: 120px;
   border-radius: 7px;
-  margin: 5px 30px 5px 0px;
+  margin: 20px 0px 5px 0px;
   font-family: "Pixelify Sans", sans-serif;
   color: rgba(202, 202, 202);
   background-color: black;
   cursor: pointer;
+  padding: 10px;
 }
 
 .select-fur-color {
   padding: 20px;
 }
+
