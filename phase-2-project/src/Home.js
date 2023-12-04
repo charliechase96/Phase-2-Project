@@ -6,7 +6,7 @@ function Home({setFavorites, kittens, setKittens}) {
         fetch("http://localhost:3000/kittens")
         .then(response => response.json())
         .then(data => setKittens(data))
-      }, [kittens])
+      }, [])
 
     return (
         <KittenForm kittens={kittens} setFavorites={setFavorites} />
