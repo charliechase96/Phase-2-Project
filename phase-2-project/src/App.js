@@ -8,6 +8,7 @@ import AddNewKitten from './AddNewKitten';
 
 function App() {
   const [favoriteKittens, setFavoriteKittens] = useState([]);
+  const [kittens, setKittens] = useState([]);
 
   const handleRemove = (idToRemove) => {
     setFavoriteKittens(prevFavorites => prevFavorites.filter(kitten => kitten.id !== idToRemove));
@@ -28,11 +29,18 @@ function App() {
             />
             <Route 
               path="/add-new-kitten" 
-              element={<AddNewKitten />} 
+              element={<AddNewKitten 
+                          kittens={kittens} 
+                          setKittens={setKittens}
+                      />} 
             />
             <Route 
               path="/" 
-              element={<Home setFavorites={setFavoriteKittens} />} 
+              element={<Home 
+                          kittens={kittens} 
+                          setFavorites={setFavoriteKittens}
+                          setKittens={setKittens} 
+                      />} 
             />
           </Routes>
         </header>

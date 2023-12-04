@@ -1,8 +1,10 @@
 import React, {useState} from "react";
+import KittenCard from "./KittenCard";
 
-function AddNewKitten() {
+function AddNewKitten({kittens, setKittens}) {
     const [color, setColor] = useState("");
     const [imageUrl, setImageUrl] = useState("");
+
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -21,6 +23,7 @@ function AddNewKitten() {
         })
             .then((response) => response.json())
             .then((data) => {
+                setKittens(prevKittens => [...prevKittens, data]);
                 setColor("");
                 setImageUrl("");
         });
@@ -62,8 +65,12 @@ function AddNewKitten() {
                     />  
                 </div>
             </form>
+            <div className="kitten-cards-container">
+                    {kittens.map(kitten => (
+                        <KittenCard key={kitten.id} kitten={kitten} />
+                    ))}
+            </div>
         </div>
-        
     )
 }
 
